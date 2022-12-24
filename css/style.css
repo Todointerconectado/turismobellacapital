@@ -1,0 +1,69 @@
+:root {
+    --shadowColor: rgb(0, 0, 0, .8);
+    --textColor: rgb(0, 0, 0);
+    --secondaryTextColor: rgb(104, 104, 104);
+    --headerColor: rgb(223, 223, 223);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------ HEADER ------------------------ */
+.header {
+    background: var(--headerColor);
+    box-shadow: 0 0 15px var(--shadowColor);
+    padding-top: 10px;
+    width: 100%;
+}
+
+.logoURL {
+    text-decoration: none;
+    color: var(--textColor)
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logoImg {
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo figcaption {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logoBella {
+    padding-top: 10px;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.logoR {
+    position: absolute;
+    top: -2px;
+    font-size: 1.3rem;
+}
+
+.logoFrase {
+    padding-top: .3rem;
+    width: 150px;
+    font-size: .8rem;
+    color: var(--secondaryTextColor);
+    letter-spacing: 1px;
+}
